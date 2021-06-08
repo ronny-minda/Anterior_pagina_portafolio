@@ -45,6 +45,36 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.curriculum {
+    
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 5rem;
+    border-radius: 50% 0 0 10%;
+    animation: cv 1s linear infinite;
+}
+
+.curriculum img {
+    height: 40px;
+    width: 40px;
+    animation: cv 1s linear infinite;
+    border-radius: 20%;
+}
+
+@keyframes cv {
+    0% {
+        background-color: #ff0000;
+    }
+    50%{
+        background-color: #ff4343;
+    }
+    100%{
+        background-color: #ff0000;
+    }
 }
 
 .movil {
