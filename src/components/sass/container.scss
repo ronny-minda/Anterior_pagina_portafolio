@@ -1,0 +1,44 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.364);
+    position: fixed;
+    z-index: 50;
+    margin: auto;
+
+}
+
+
+@media (min-width: 320px) {
+    .container {
+        .container_div {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0.364);
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+
+        .container_div {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0.364);
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+
+       .container_div {
+            margin: auto;
+            height: 100%;
+            width: 110rem;
+            background-color: rgba(255, 0, 0, 0.364);
+            transform: skewX(25deg);
+        }
+    }
+}

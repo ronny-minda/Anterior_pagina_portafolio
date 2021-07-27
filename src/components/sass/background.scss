@@ -1,0 +1,59 @@
+
+//variables color animacion de fondo
+$background_color: #111111;
+$line_color: #c7c7c7;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $background_color;
+    .svg-fondo {
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        stroke: $line_color;
+        stroke-width: 2;
+        stroke-dasharray: 100;
+        animation: bu 100s linear infinite;
+
+
+        polygon {
+            fill: #dd242400;
+        }
+
+    
+        @keyframes bu {
+            0%{
+                stroke-dasharray: 100;
+            }
+            50%{
+                stroke-dasharray: 400;
+            }
+            100%{
+                stroke-dasharray: 100;
+            }
+        }
+    }
+}
+
+/* * {
+    overflow: hidden;
+} */
+
+
+
+
+
+
