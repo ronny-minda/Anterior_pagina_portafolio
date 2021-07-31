@@ -1,12 +1,13 @@
 
 //variables color animacion de fondo
-$background_color: #111111;
-$line_color: #c7c7c7;
+$background_color: #131417;
+$line_color: #55bff6;
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 html {
@@ -14,39 +15,74 @@ html {
 }
 
 body {
-    background-color: $background_color;
-    .svg-fondo {
-        width: 150%;
-        height: 150%;
-        position: absolute;
+    /* background-color: $background_color; */
+    height: 100vh;
+    background-image: linear-gradient(to right, #484b55, #3d3f48, #32343b, #28292f, #1e1f23);
+    .conte_bac {
         position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        stroke: $line_color;
-        stroke-width: 2;
-        stroke-dasharray: 100;
-        animation: bu 100s linear infinite;
-
-
-        polygon {
-            fill: #dd242400;
+        height: 100vh;
+        width: 100vw;
+        transform: rotate(-30deg);
+        transform: rotate(0deg);
+        animation: rota 30s linear infinite;
+        
+        
+        .cir_blue {
+            position: absolute;
+            height: 10rem;
+            width: 10rem;
+            background-color: $line_color;
+            border-radius: 50%;
+            
+            bottom: 150px;
+            left: 80px;
+            filter: blur(80px);
+            /* transition: 1s bottom, 1s left; */
         }
-
-    
-        @keyframes bu {
-            0%{
-                stroke-dasharray: 100;
-            }
-            50%{
-                stroke-dasharray: 400;
-            }
-            100%{
-                stroke-dasharray: 100;
-            }
+        .cir_mora {
+            position: absolute;
+            height: 10rem;
+            width: 10rem;
+            background-color: #b36cd777;
+            border-radius: 50%;
+            
+            bottom: 0;
+            right: 0;
+            filter: blur(80px);
+        }
+        .cir_amar {
+            position: absolute;
+            height: 10rem;
+            width: 10rem;
+            background-color: #edc264a1;
+            border-radius: 50%;
+            
+            top: 20px;
+            left: 50px;
+            filter: blur(80px);
+        }
+        .cir_rojo {
+            position: absolute;
+            height: 10rem;
+            width: 10rem;
+            background-color: #a7d658a1;
+            border-radius: 50%;
+            
+            top: 20px;
+            right: 50px;
+            filter: blur(80px);
+        }
+    }
+    @keyframes rota {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
         }
     }
 }
+
 
 /* * {
     overflow: hidden;

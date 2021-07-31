@@ -1,15 +1,17 @@
 import React from 'react';
-import Container from './container';
-import './sass/navbar.scss';
+
+import './sass/header.scss';
 
 let About = 'ABOUT';
 let Proyects = 'PROYECTS';
 let Contact = 'CONTACT';
 let Certicate = 'CERTIFICATE';
-let Download = 'DOWNLOAD';
+let Download = 'CV DOWN...';
 
 
 class header extends React.Component {
+
+    
 
   render() {
     return (
@@ -17,8 +19,7 @@ class header extends React.Component {
             <header className='header'>
                 <nav className='header_navbar'>
                     <li>
-                        {/* <link href="">{About}</link> */}
-                        <a href="">{About}</a>
+                        <a href="#">{About}</a>
                     </li>
                     <li>
                         <a href="">{Proyects}</a>

@@ -1,7 +1,8 @@
 import React from 'react';
 import './sass/container.scss';
 
-import Header from './header'
+import Header from './header';
+
 
 class Container extends React.Component {
   render() {
