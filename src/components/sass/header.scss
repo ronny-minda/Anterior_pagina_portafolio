@@ -1,38 +1,73 @@
 
 .header {
     background-color: #ffffff;
-    background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 88%, rgba(0,0,0,1) 100%);
+    
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 
     .header_navbar {
         
 
         li {
-            transform: skewX(-25deg);
             list-style: none;
-            
-            margin-left: .8rem;
+            background-color: rgba(255, 0, 0, 0);
 
             a {
+                text-align: 10%;
                 text-decoration: none;
                 color: #000;
-                font-weight: bold;
-            }
-            a::after {
-                content: " ";
+                width: 100%;
                 display: block;
-                height: .5rem;
-                width: 16rem;
-                background-color: red;
-                transform: skewX(25deg);
+                transform: skewX(-25deg);
+                
             }
+            a:hover {
+                font-weight: bold;
+                
+                
+                transition: 1s background-color, .5s transform;
+            }
+
+        }
+        div {
+            height: .7rem;
+            width: 0rem;
+            background-color: #000000;
+            transition: .3s;
+        }
+        li:hover {
+            background-color: #3fb86721;
+            box-shadow: 0px 0px 23px 1px #3fb867;
+            transition: .3s;
+        }
+        .li-Download:hover{
+            background-color: #77171721;
+            box-shadow: 0px 0px 23px 1px #771717;
+            transition: .3s;
+        }
+
+        .li-About:hover ~ .raya-About{
+            width: 100%;
+            background-color: #3fb867;
+        }
+        .li-Projects:hover ~ .raya-Projects{
+            width: 100%;
+            background-color: #3fb867;
+        }
+        .li-Contact:hover ~ .raya-Contact{
+            width: 100%;
+            background-color: #3fb867;
+        }
+        .li-Certificate:hover ~ .raya-Certificate{
+            width: 100%;
+            background-color: #3fb867;
+        }
+        .li-Download:hover ~ .raya-Download{
+            width: 100%;
+            background-color: #771717f3;
         }
     }
-
-    
-    
 }
 
 @media (min-width: 320px) {
@@ -73,7 +108,7 @@
                 a::after {
                     transform: skewX(0deg);
                     background-color: black;
-                    width: 16rem;
+
                 }
             }
         }
@@ -82,24 +117,28 @@
 
 @media (min-width: 1000px) {
     .header {
-        background-color: #ffffff;
+        border-radius: 10px 0 0 10px;
+    
+        background: linear-gradient(0deg, #535455  0%, #e6e6e6 10%, #e6e6e6  90%, #535455 100%);
         height: 100vh;
-        width: 20rem;
+        width: 25rem;
         left: -0%;
         .header_navbar {
-    
+            width: 100%;
 
             li {
-                transform: skewX(-25deg);
-                margin: 1rem 0 1rem 0;
+                text-align: center;
+                transform: skewX(0deg);
+                margin: 1rem 0 0rem 0;
                 a {
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                 }
                 a::after {
-                    content: " ";
+                    /* content: " ";
                     height: .5rem;
                     width: 18rem;
-                    background-color: red;
+                    background-color: rgb(255, 0, 0);
+                    transform: skewX(25deg); */
                     transform: skewX(25deg);
                 }
             }
@@ -107,6 +146,16 @@
     }
 }
 
-.navmenu {
-    left: -50%;
+
+
+
+.menuact1 {
+    background-color: #3fb86721;
+    box-shadow: 0px 0px 23px 1px #3fb867;
+    transition: .3s;
+}
+
+.menuact2{
+    width: 100%;
+    background-color: #3fb867;
 }

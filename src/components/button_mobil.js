@@ -8,10 +8,7 @@ class button extends React.Component {
 
   constructor(props) {
     super(props);
-    
-
-    
-
+  
     this.state = {
       contador: 4,
       clas1: 'btn'
