@@ -36,7 +36,6 @@ class button extends React.Component {
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
-        <h1></h1>
       </div>
     )
   }

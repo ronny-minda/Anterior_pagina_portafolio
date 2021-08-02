@@ -1,13 +1,9 @@
 import React from 'react';
-import btn from './button_mobil';
+import { Link } from 'react-router-dom';
 
 import './sass/header.scss';
 
-let About = 'ABOUT';
-let Projects = 'PROYECTS';
-let Contact = 'CONTACT';
-let Certificate = 'CERTIFICATE';
-let Download = 'CV DOWNLOAD';
+
 
 
 class header extends React.Component {
@@ -16,37 +12,45 @@ class header extends React.Component {
         super(props);
         
         this.state = {
-          clasAbout: 'li-About menuact1',
-          rayaAbout: 'raya-About menuact2',
 
-          clasProjects: 'li-Projects',
-          rayaProjects: 'raya-Projects',
+            About: 'ABOUT',
+            Projects: 'PROYECTS',
+            Contact: 'CONTACT',
+            Certificate: 'CERTIFICATE',
+            Download: 'CV DOWNLOAD',
 
-          clasContact: 'li-Contact',
-          rayaContact: 'raya-Contact',
 
-          clasCertificate: 'li-Certificate',
-          rayaCertificate: 'raya-Certificate',
+            clasAbout: 'li-About menuact1',
+            rayaAbout: 'raya-About menuact2',
 
-          clasDownload: 'li-Download',
-          rayaDownload: 'raya-Download',
+            clasProjects: 'li-Projects',
+            rayaProjects: 'raya-Projects',
+
+            clasContact: 'li-Contact',
+            rayaContact: 'raya-Contact',
+
+            clasCertificate: 'li-Certificate',
+            rayaCertificate: 'raya-Certificate',
+
+            clasDownload: 'li-Download',
+            rayaDownload: 'raya-Download',
         }
     }
 
     cambioFocus = (a1,a2, b1,b2, c1,c2, d1, d2) => {
 
         this.setState({
-            clasAbout: this.state.clasAbout = a1,
-            rayaAbout: this.state.clasAbout = a2,
+            clasAbout: a1,
+            rayaAbout: a2,
 
-            clasProjects: this.state.clasAbout = b1,
-            rayaProjects: this.state.clasAbout = b2,
+            clasProjects: b1,
+            rayaProjects: b2,
 
-            clasContact: this.state.clasAbout = c1,
-            rayaContact: this.state.clasAbout = c2,
+            clasContact: c1,
+            rayaContact: c2,
 
-            clasCertificate: this.state.clasAbout = d1,
-            rayaCertificate: this.state.clasAbout = d2,
+            clasCertificate: d1,
+            rayaCertificate: d2,
         });
     }
 
@@ -83,36 +87,34 @@ class header extends React.Component {
 
   render() {
     return (
-        <div>
             <header className={this.props.navBar}>
                 <nav className='header_navbar' onClick={this.props.onClick}>
                     <li className={ this.state.clasAbout } onClick={this.About}>
-                        <a href="#">{About}</a>
+                        <Link to="#">{ this.state.About }</Link>
                     </li>
                     <div className={ this.state.rayaAbout }></div>
 
                     <li className={ this.state.clasProjects } onClick={this.Projects}>
-                        <a href="#">{Projects}</a>
+                        <Link to="#">{this.state.Projects }</Link>
                     </li>
                     <div className={ this.state.rayaProjects }></div>
 
                     <li className={ this.state.clasContact} onClick={this.Contact}>
-                        <a href="#">{Contact}</a>
+                        <Link to="#">{ this.state.Contact }</Link>
                     </li>
                     <div className={ this.state.rayaContact}></div>
 
                     <li className={ this.state.clasCertificate } onClick={this.Certificate}>
-                        <a href="#">{Certificate}</a>
+                        <Link to="#">{ this.state.Certificate }</Link>
                     </li>
                     <div className={ this.state.rayaCertificate}></div>
                     
                     <li className={ this.state.clasDownload }>
-                        <a href="#" title={Download}>{Download}</a>
+                        <Link to="#" title={ this.state.Download }>{ this.state.Download }</Link>
                     </li>
                     <div className={ this.state.rayaDownload }></div>
                 </nav>
             </header>
-        </div>
     )
   }
 }

@@ -1,0 +1,109 @@
+
+main {
+    position: absolute;
+    right: 0;
+    background-color: rgb(132, 202, 202);
+    width: 71rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1,h3,p{
+        transform: skewX(-25deg);
+    }
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin: 0 0 1.3rem 0;
+    }
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 0 2.5rem 0;
+    }
+    p {
+        font-size: 1.5rem;
+        
+    }
+    .main_raya {
+        height: 1rem;
+        width: 100%;
+        background-color: #ffffff;
+        margin: 2rem 0 0 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__section1 section {
+    display: grid;
+    grid-template-columns: 7rem  1fr  7rem  1fr  7rem 1fr 7rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main__section1 section > svg, span{
+    transform: skewX(-25deg);
+}
+
+.main__section1 section .html {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.main__section1 section .css {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.main__section1 section .js {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.main__section1 section .sass {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+}
+
+.main__section1 section .ubuntu {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.main__section1 section .git {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.main__section1 section .github {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.main__section1 section svg {
+    height: 50px;
+}
+
+.main__section1 section span {
+    display: inline;
+    font-size: var(--parrafo);
+}
+
+}

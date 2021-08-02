@@ -1,4 +1,6 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
+
 import Background from '../components/background';
 import Container from '../components/container';
 
@@ -6,10 +8,10 @@ import Container from '../components/container';
 class App extends React.Component {
   render() {
     return (
-        <div>
+          <BrowserRouter>
             <Background />
             <Container />
-        </div>
+          </BrowserRouter>
     )
   }
 }

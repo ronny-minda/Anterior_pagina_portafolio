@@ -6,7 +6,7 @@ import imgSvg3 from '../img/imgSvg3.svg';
 class Background extends React.Component {
   render() {
     return (
-        <div>
+        <section className="background_page">
             <div className="conte_bac">
               <div className="cir_blue"></div>
               <div className="cir_mora"></div>
@@ -17,7 +17,7 @@ class Background extends React.Component {
               <img className="img1" src={imgSvg2} alt=""></img>
               <img className="img2" src={imgSvg3} alt=""></img>
             </div>
-        </div>
+        </section>
     );
   }
 }
