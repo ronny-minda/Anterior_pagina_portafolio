@@ -67,27 +67,48 @@
             width: 100%;
             background-color: #771717f3;
         }
+
+        .menuact2{
+            width: 100%;
+            background-color: #3fb867;
+        }
     }
 }
 
 @media (min-width: 320px) {
     .header {
         height: 100vh;
-        width: 20rem;
+        width: 100vw;
+        left: -100%;
+        position: fixed;
+        z-index: 99999;
+        
+        position: absolute;
+        
+        transition: .5s left;
+
+        /* justify-content: center; */
+
         .header_navbar {
-            
+            width: 100%;
+            text-align: center;
             li {
                 transform: skewX(0deg);
-                margin: 3rem 0 3rem 0;
+                margin: 3rem 0 0rem 0;
+                
                 a {
                     font-size: 2rem;
-                }
-                a::after {
                     transform: skewX(0deg);
-                    
+                    font-size: 5rem;
                 }
             }
+            div {
+                height: 2rem;
+            }
         }
+    }
+    .navBar {
+        left: -0%;
     }
 }
 
@@ -96,20 +117,19 @@
         height: 100vh;
         width: 100vw;
         position: absolute;
-        left: -100%;
-        transition: 1s left;
+        
+        transition: .5s left;
         .header_navbar {
             li {
                 transform: skewX(0deg);
-                margin: 4rem 0 4rem 0;
+                margin: 4rem 0 0rem 0;
                 a {
                     font-size: 5rem;
                 }
-                a::after {
-                    transform: skewX(0deg);
-                    background-color: black;
-
-                }
+            }
+            .menuact2{
+                width: 100%;
+                background-color: #3fb867;
             }
         }
     }
@@ -132,6 +152,7 @@
                 margin: 1rem 0 0rem 0;
                 a {
                     font-size: 2.5rem;
+                    transform: skewX(-25deg);
                 }
                 a::after {
                     /* content: " ";
@@ -141,6 +162,9 @@
                     transform: skewX(25deg); */
                     transform: skewX(25deg);
                 }
+            }
+            div {
+                height: .7rem;
             }
         }
     }
@@ -153,9 +177,6 @@
     background-color: #3fb86721;
     box-shadow: 0px 0px 23px 1px #3fb867;
     transition: .3s;
+    font-weight: bold;
 }
 
-.menuact2{
-    width: 100%;
-    background-color: #3fb867;
-}
