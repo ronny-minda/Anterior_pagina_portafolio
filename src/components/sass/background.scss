@@ -10,6 +10,11 @@ $line_color: #55bff6;
     font-family: 'Orbitron', sans-serif;
 }
 
+::selection {
+    background: #7e5f5f;
+    color: #fde7e7;
+}
+
 html {
     font-size: 62.5%;
 }

@@ -56,24 +56,28 @@ class header extends React.Component {
 
 
     About = () => {
+        this.props.about();
         this.cambioFocus('li-About menuact1','raya-About menuact2', 
                          'li-Projects','raya-Projects', 
                          'li-Contact','raya-Contact', 
                          'li-Certificate','raya-Certificate');
     }
     Projects = () => {
+        this.props.proyects();
         this.cambioFocus('li-About','raya-About', 
                          'li-Projects menuact1','raya-Projects menuact2', 
                          'li-Contact','raya-Contact', 
                          'li-Certificate','raya-Certificate');
     }
     Contact = () => {
+        this.props.contact();
         this.cambioFocus('li-About','raya-About', 
                          'li-Projects','raya-Projects', 
                          'li-Contact menuact1','raya-Contact menuact2', 
                          'li-Certificate','raya-Certificate');
     }
     Certificate = () => {
+        this.props.certificate();
         this.cambioFocus('li-About','raya-About', 
                          'li-Projects','raya-Projects', 
                          'li-Contact','raya-Contact', 
@@ -87,7 +91,7 @@ class header extends React.Component {
 
   render() {
     return (
-            <header className={this.props.navBar}>
+            <header className={this.props.navBar} >
                 <nav className='header_navbar' onClick={this.props.onClick}>
                     <li className={ this.state.clasAbout } onClick={this.About}>
                         <Link to="#">{ this.state.About }</Link>

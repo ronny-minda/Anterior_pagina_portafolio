@@ -15,17 +15,18 @@ class Container extends React.Component {
     this.state = {
       clas1: 'btn',
       navBarClas: 'header',
-      navBar: true,
+      navBar: false,
+      main: 'main_about'
     }
   }
 
   Prueba = () => {
-    let clase1;
-    let clase2;
-    let booleano = true;
+    let clase1 ;
+    let clase2 ;
+    let booleano;
     
 
-    booleano = !booleano;
+    booleano = !this.state.navBar;
 
     
     
@@ -40,13 +41,48 @@ class Container extends React.Component {
     
   }
 
+  about = () => {
+    this.setState({
+      main: 'main_about',
+    });
+    console.log(this.state.main)
+  }
+  proyects = () => {
+    this.setState({
+      main: 'main_proyects',
+    });
+    console.log(this.state.main)
+  }
+  contact = () => {
+    this.setState({
+      main: 'main_contact',
+    });
+    console.log(this.state.main)
+  }
+  certificate = () => {
+
+    console.log(this.state.main)
+    
+    let certificate = 'main_certificate'
+    this.setState({
+      main: certificate,
+    });
+    console.log(this.state.main)
+  }
+
   render() {
     return (
       <section className='container'>
         <div className='container_div'>
             <Btn clas1={this.state.clas1} onClick={this.Prueba}/>
-            <Header navBar = {this.state.navBarClas} onClick={this.Prueba}/>
-            <Main />
+            <Header 
+            navBar = {this.state.navBarClas} 
+            onClick={this.Prueba} 
+            about={this.about} 
+            proyects={this.proyects} 
+            contact={this.contact} 
+            certificate={this.certificate} />
+            <Main main={this.state.main}/>
         </div>
       </section>
     );
