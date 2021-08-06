@@ -26,7 +26,7 @@ class about extends React.Component {
         <br></br>
         <p>También disfruto de los juegos, la gimnasia y el levantamiento de pesas.</p>
         <div className="main_raya"></div>
-        <section>
+        <section className="section">
 
           <img className="html" src={html} alt="html"></img>
           <span>HTML</span>
@@ -48,6 +48,7 @@ class about extends React.Component {
 
           <img className="github" src={github} alt="github"></img>
           <span>GITHUB</span>
+          
 
         </section>
         <div className="main_raya"></div>

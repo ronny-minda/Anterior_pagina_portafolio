@@ -1,9 +1,27 @@
 
-main {
-    position: absolute;
-    right: 10px;
-    top:0;
-    transition: .5s top;
+
+@media (min-width: 320px) {
+    main {
+        overflow: scroll;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 600px) {
+    main {
+        
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        height: 400vh;
+        overflow: hidden;
+        position: absolute;
+        right: 10px;
+        top:0;
+        transition: .5s top;
+    }
 }
 
 .main_about {

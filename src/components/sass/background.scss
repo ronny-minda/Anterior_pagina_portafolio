@@ -23,69 +23,36 @@ body {
     /* background-color: $background_color; */
     height: 100vh;
     background-image: linear-gradient(to right, #484b55, #3d3f48, #32343b, #28292f, #1e1f23);
-    .conte_bac {
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        transform: rotate(-30deg);
-        transform: rotate(0deg);
-        animation: rota 30s linear infinite;
-        
-        
-        .cir_blue {
-            position: absolute;
-            height: 10rem;
-            width: 10rem;
-            background-color: $line_color;
-            border-radius: 50%;
+    
+
+    @media (min-width: 320px) {
+        .logo {
+            position: fixed;
+            height: 120px;
+            background-color: #ffffff00;
+            display: flex;
+            top: -30px;
+            left : calc(50% - 60px);
+            z-index: 999;
             
-            bottom: 150px;
-            left: 80px;
-            filter: blur(80px);
-            /* transition: 1s bottom, 1s left; */
-        }
-        .cir_mora {
-            position: absolute;
-            height: 10rem;
-            width: 10rem;
-            background-color: #b36cd777;
-            border-radius: 50%;
-            
-            bottom: 0;
-            right: 0;
-            filter: blur(80px);
-        }
-        .cir_amar {
-            position: absolute;
-            height: 10rem;
-            width: 10rem;
-            background-color: #edc264a1;
-            border-radius: 50%;
-            
-            top: 20px;
-            left: 50px;
-            filter: blur(80px);
-        }
-        .cir_rojo {
-            position: absolute;
-            height: 10rem;
-            width: 10rem;
-            background-color: #a7d658a1;
-            border-radius: 50%;
-            
-            top: 20px;
-            right: 50px;
-            filter: blur(80px);
         }
     }
-    @keyframes rota {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
+    @media (min-width: 1000px) {
+        .logo {
+            position: fixed;
+            background-color: #3a060600;
+            width: auto;
+            display: flex;
+            top: -30px;
+            left: 0;
+            margin: 1rem;
+            img {
+                margin: auto;
+                height: 150px;
+            }
         }
     }
+
     .background_img {
         position: fixed;
         height: 100vh;
@@ -95,12 +62,34 @@ body {
             height: 40rem;
             top: 0;
             right: 0;
+            filter: brightness(100%);
         }
         .img2 {
             position: fixed;
             height: 50rem;
             left: 0;
             bottom: 0;
+            filter: brightness(100%);
+        }
+    }
+    @media (min-width: 320px) {
+        .background_img {
+            .img1 {
+                filter: brightness(50%);
+            }
+            .img2 {
+                filter: brightness(50%);
+            }
+        }
+    }
+    @media (min-width: 1000px) {
+        .background_img {
+            .img1 {
+                filter: brightness(100%);
+            }
+            .img2 {
+                filter: brightness(100%);
+            }
         }
     }
 }

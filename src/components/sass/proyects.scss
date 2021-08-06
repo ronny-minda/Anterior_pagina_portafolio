@@ -1,6 +1,192 @@
 
 .proyects {
-    height: 100vh;
-    width: 71rem;
     background-color: #ffbe69;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    
+
+
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin: 0 0 1.3rem 0;
+    }
+    p {
+        font-size: 1.6rem;
+        text-align: left;
+        margin: 0 0 2.5rem 0;
+    }
+    
+    
+    .carrusel {
+        height: 40rem;
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0);
+        /* scroll-behavior: ; */
+        overflow-y: hidden;
+        overflow-x: scroll;
+        display: inline-block;
+        position: relative;
+        
+        
+    
+        
+        .carrusel1 {
+            transition: 1s;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 600%;
+            background-color: rgb(0, 255, 255);
+            position: absolute;
+            bottom: 0;
+            left: -0%;
+            user-select: none; 
+            .carrusel_flehaiz {
+                transform:  rotateY(180deg) skewX(25deg);
+                height: 60px;
+                display: flex;
+                position: fixed;
+                z-index: 999;
+                left: 28rem;
+                background-color: rgba(188, 143, 143, 0);
+            }
+            .carrusel_flehadere {
+                transform: skewX(-25deg);
+                height: 60px;
+                display: flex;
+                position: fixed;
+                z-index: 999;
+                right: 3px;
+                background-color: rgba(188, 143, 143, 0);
+            }
+            li {
+                list-style: none;
+                height: 100%;
+                width: 71rem;
+                background-color: rgb(0, 0, 255);
+                margin-left: 1px;
+                position: relative;
+                bottom: 0;
+            }
+            .pro {
+                background-color: rgba(221, 255, 0, 0);
+                display: flex;
+                align-items: center;
+                height: auto;
+               .conte_img {
+                    background-color: #666666;
+                    clip-path: inset(0 0 0 0);
+                    margin: 0 0 0 6rem;
+                    height: 38rem;
+                    .raya_pro {
+                        margin: 3px 0;
+                        height: 1.5rem;
+                        width: 100%;
+                        background-color: #ffffff;
+                    }
+                    .pro1_img {
+                        height: 20rem;
+                        width: 40rem;
+                        transform: skewX(-25deg);
+                    }
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+                    p {
+                        display: inline-block;
+                        margin-left: 10px;
+                        transform: skewX(-25deg);
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        background-color: rgba(255, 0, 0, 0);
+                        display: inline-block;
+                        transform: skewX(-25deg);
+                        font-size: 1.6rem;
+                        margin-left: 10px;
+                    }
+                    a:hover {
+                        color: #ffe16a;
+                        text-decoration: underline;
+                    }
+               }
+               .contenido {
+                   height: 38rem;
+                   width: 20rem;
+                   background-color: red;
+               }
+            }
+        }
+
+        .proyecto1 {
+            left: -100%;
+        }
+        .proyecto2 {
+            left: -200%;
+        }
+        .proyecto3 {
+            left: -300%;
+        }
+        .proyecto4 {
+            left: -400%;
+        }
+
+        .carrusel2 {
+            
+        }
+        .carrusel3 {
+            
+            
+        }
+    }
+    .carrusel::-webkit-scrollbar {
+        background-color: red;
+        height: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) {
+    .proyects {
+        width: 100%;
+        h2,p{
+            transform: skewX(0deg);
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .proyects {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .proyects {
+        width: 71rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .proyects {
+        padding-top: 0rem;
+        width: 71rem;
+        height: 100vh;
+        h2,p{
+            transform: skewX(-25deg);
+        }
+    }
 }
