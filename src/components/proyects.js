@@ -23,7 +23,7 @@ class proyects extends React.Component {
   
 
   Izquierda = () => {
-    if (this.state.proyectoActual >= -1) {
+    if (this.state.proyectoActual >= 1) {
       console.log(this.state.proyectoActual, 'siii');
 
       let cont = this.state.proyectoActual - 1;
@@ -60,15 +60,17 @@ class proyects extends React.Component {
   render() {
     return (
       <section className="proyects">
-        <img src="../img/des.png" alt=""></img>
           <h2>Proyectos Personales</h2>
           <p>Estos son algunos de los proyectos que yo e realizado.</p>
+
+          <img className="carrusel_flehaiz" src={flecha} alt="" onClick={this.Izquierda}></img>
+          <img className="carrusel_flehadere" src={flecha} alt="" onClick={this.Derecha}></img>
+
           <div className="carrusel">
 
             <section className={this.state.carrusel}>
 
-              <img className="carrusel_flehaiz" src={flecha} alt="" onClick={this.Izquierda}></img>
-              <img className="carrusel_flehadere" src={flecha} alt="" onClick={this.Derecha}></img>
+              
               
               <li className="pro">
                 <section className="conte_img">
@@ -81,10 +83,130 @@ class proyects extends React.Component {
                   <a href="https://ronny-minda.github.io/" target="_blank">Web Page</a>
                   <a href="https://github.com/ronny-minda" target="_blank">GitHub</a>
                 </section>
-                <section className="contenido"></section>
+                <section className="contenido">
+                  <h2>PORTFOLIO</h2>
+                  <p>Portafolio o pagina</p>
+                  <p>web personales la que</p>
+                  <p>expongo mis</p>
+                  <p>conocimientos, proyectos</p>
+                  <p>personales, CV. En general</p>
+                  <p>un presentacion mia</p>
+                  <p></p>
+                  
+                  <p>
+                         
+                  </p>
+                </section>
               </li> 
-              <li className="pro2"></li> 
-              <li className="pro3"></li> 
+
+              <li className="pro">
+                <section className="conte_img">
+                  <img className="pro1_img" src={desktop} alt=""></img>
+                  <div className="raya_pro"></div>
+                  <h2>TECHNOLOGIES</h2>
+                  <p>React.js</p>
+                  <p>Sass</p>
+                  <h2>AVAILABLE</h2>
+                  <a href="https://ronny-minda.github.io/" target="_blank">Web Page</a>
+                  <a href="https://github.com/ronny-minda" target="_blank">GitHub</a>
+                </section>
+                <section className="contenido">
+                  <h2>PORTFOLIO</h2>
+                  <p>Portafolio o pagina</p>
+                  <p>web personales la que</p>
+                  <p>expongo mis</p>
+                  <p>conocimientos, proyectos</p>
+                  <p>personales, CV. En general</p>
+                  <p>un presentacion mia</p>
+                  <p></p>
+                  
+                  <p>
+                         
+                  </p>
+                </section>
+              </li> 
+
+              <li className="pro">
+                <section className="conte_img">
+                  <img className="pro1_img" src={desktop} alt=""></img>
+                  <div className="raya_pro"></div>
+                  <h2>TECHNOLOGIES</h2>
+                  <p>React.js</p>
+                  <p>Sass</p>
+                  <h2>AVAILABLE</h2>
+                  <a href="https://ronny-minda.github.io/" target="_blank">Web Page</a>
+                  <a href="https://github.com/ronny-minda" target="_blank">GitHub</a>
+                </section>
+                <section className="contenido">
+                  <h2>PORTFOLIO</h2>
+                  <p>Portafolio o pagina</p>
+                  <p>web personales la que</p>
+                  <p>expongo mis</p>
+                  <p>conocimientos, proyectos</p>
+                  <p>personales, CV. En general</p>
+                  <p>un presentacion mia</p>
+                  <p></p>
+                  
+                  <p>
+                         
+                  </p>
+                </section>
+              </li> 
+
+              <li className="pro">
+                <section className="conte_img">
+                  <img className="pro1_img" src={desktop} alt=""></img>
+                  <div className="raya_pro"></div>
+                  <h2>TECHNOLOGIES</h2>
+                  <p>React.js</p>
+                  <p>Sass</p>
+                  <h2>AVAILABLE</h2>
+                  <a href="https://ronny-minda.github.io/" target="_blank">Web Page</a>
+                  <a href="https://github.com/ronny-minda" target="_blank">GitHub</a>
+                </section>
+                <section className="contenido">
+                  <h2>PORTFOLIO</h2>
+                  <p>Portafolio o pagina</p>
+                  <p>web personales la que</p>
+                  <p>expongo mis</p>
+                  <p>conocimientos, proyectos</p>
+                  <p>personales, CV. En general</p>
+                  <p>un presentacion mia</p>
+                  <p></p>
+                  
+                  <p>
+                         
+                  </p>
+                </section>
+              </li> 
+
+              <li className="pro">
+                <section className="conte_img">
+                  <img className="pro1_img" src={desktop} alt=""></img>
+                  <div className="raya_pro"></div>
+                  <h2>TECHNOLOGIES</h2>
+                  <p>React.js</p>
+                  <p>Sass</p>
+                  <h2>AVAILABLE</h2>
+                  <a href="https://ronny-minda.github.io/" target="_blank">Web Page</a>
+                  <a href="https://github.com/ronny-minda" target="_blank">GitHub</a>
+                </section>
+                <section className="contenido">
+                  <h2>PORTFOLIO</h2>
+                  <p>Portafolio o pagina</p>
+                  <p>web personales la que</p>
+                  <p>expongo mis</p>
+                  <p>conocimientos, proyectos</p>
+                  <p>personales, CV. En general</p>
+                  <p>un presentacion mia</p>
+                  <p></p>
+                  
+                  <p>
+                         
+                  </p>
+                </section>
+              </li> 
+              
            
             </section>
 
