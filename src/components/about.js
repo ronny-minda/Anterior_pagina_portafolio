@@ -53,6 +53,7 @@ class about extends React.Component {
           <img className="github" src={github} alt="github"></img>
           <span>GITHUB</span>
           
+          
 
         </section>
         <div className="main_raya"></div>
