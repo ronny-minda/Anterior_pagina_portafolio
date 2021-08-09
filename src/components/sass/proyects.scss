@@ -28,6 +28,7 @@
         margin: 0 0 1.3rem 0;
     }
     p {
+        padding-left: 20px;
         font-size: 1.6rem;
         text-align: left;
         margin: 0 0 2.5rem 0;
@@ -41,6 +42,7 @@
         z-index: 999;
         left: 0rem;
         background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
     }
     .carrusel_flehadere {
         transform: skewX(-25deg);
@@ -50,6 +52,7 @@
         z-index: 999;
         right: 0px;
         background-color: rgba(188, 143, 143, 0);
+        cursor: pointer;
     }
     
     
@@ -104,6 +107,7 @@
                .conte_img {
                     background-color: #2f3137;
                     clip-path: inset(0 0 0 0);
+                    
                     margin: 0 0 0 6rem;
                     height: 38rem;
                     .raya_pro {
@@ -113,32 +117,98 @@
                         background-color: #ffffff;
                     }
                     .pro1_img {
+                        
+
+                        object-fit: contain;
                         height: 20rem;
                         width: 40rem;
                         transform: skewX(-25deg);
+                        cursor: zoom-in;
+                        transition: 1s;
                     }
+                    
+                    /* .pro1_img:focus {
+                       background-color: blue;
+                        filter: blur(2px);
+                    }
+                    .zoom {
+
+                    } */
                     h2 {
                         font-size: 1.4rem;
                     }
                     p {
                         display: inline-block;
                         margin-left: 10px;
-                        transform: skewX(-25deg);
+                        transform: skewX(-0deg);
                     }
                     a {
                         text-decoration: none;
                         color: #fff;
                         background-color: rgba(255, 0, 0, 0);
                         display: inline-block;
-                        transform: skewX(-25deg);
+                        transform: skewX(-0deg);
                         font-size: 1.6rem;
                         margin-left: 10px;
+                        
+                    }
+                    a::after {
+                        content: '';
+                        display: inline-block;
+                        
+            
+                        height: 18px;
+                        width: 18px;
+                        background: url("../../img/redirects.png");
+                        background-size: 18px 18px;
+                        background-repeat: no-repeat;
+                        background-color: rgba(255, 0, 0, 0);
+                        margin-left: 5px;
                     }
                     a:hover {
-                        color: #ffe16a;
+                        color: #ff806a;
                         text-decoration: underline;
                     }
                }
+               .zoom {
+                   backdrop-filter: blur(0px);
+                   filter: opacity(0%);
+
+                   background-color: #59595946;
+                   position: fixed;
+                   z-index: 999999999;
+                   height: 100%;
+                   width: 100%;
+                   top: 0;
+                   left: 0;
+                   display: none;
+                   justify-content: center;
+                   align-items: center;
+                   transition: .5s;
+                    .zoom_img {
+                        cursor: zoom-out;
+                        height: 50rem;
+                        width: 80rem;
+                        transform: skewX(-25deg);
+                        object-fit: contain;
+                    }
+                    @media (max-width: 1000px) {
+                        .zoom_img {
+                            transform: skewX(-0deg);
+                        }
+                    }
+                }
+
+                .zoom_opa {
+                    backdrop-filter: blur(2px);
+                    filter: opacity(100%);
+                    transition: .5;
+                }
+                
+                .zoom_none {
+                    display: flex;
+                }
+               
                .contenido {
                    height: 38rem;
                    width: 20rem;
@@ -191,7 +261,12 @@
                     flex-direction: row;
                     height: auto;
                     .conte_img {
-                        
+                        p {
+                            transform: skewX(-25deg);
+                        }
+                        a {
+                            transform: skewX(-25deg);
+                        }
                     }
                     .contenido {
                         height: 38rem;
@@ -344,3 +419,4 @@
         }
     }
 }
+

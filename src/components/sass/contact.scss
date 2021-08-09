@@ -2,5 +2,151 @@
 .contact {
     height: 100vh;
     width: 100%;
-    background-color: #ff6e69;
+    background-color: #ffffff06;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin: 0 0 1.3rem 0;
+        transform: skewX(-25deg);
+    }
+    p {
+        padding-left: 20px;
+        font-size: 1.6rem;
+        text-align: left;
+        
+        transform: skewX(-25deg);
+    }
+
+    .raya_contact {
+        height: 1.5rem;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 3rem 0rem;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 20rem 50rem;
+        grid-template-rows: repeat(5, 5rem);
+        a {
+            display: inline-block;
+            font-size: 1.6rem;
+            transform: skewX(-25deg);
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            transition: .3s font-size;
+        }
+        a:hover {
+            color: #ff8484;
+            text-decoration: underline;
+            font-size: 1.7rem;
+        }
+        a::after {
+            content: '';
+            display: inline-block;
+            
+
+            height: 20px;
+            width: 23px;
+            background: url("../../img/redirects.png");
+            background-size: 21px 21px;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 0, 0, 0);
+            margin-left: 5px;
+        }
+        span {
+            display: inline-block;
+            font-size: 1.7rem;
+            transform: skewX(-25deg);
+            margin-left: 5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .contact {
+        padding: 3rem 0;
+        height: auto;
+        width: 71rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        margin: auto;
+        
+    
+    
+        h2 {
+            text-align: center;
+            font-size: 4rem;
+            margin: 0 0 1.3rem 0;
+            transform: skewX(-0deg);
+
+        }
+        p {
+            font-size: 1.6rem;
+            text-align: left;
+            
+            transform: skewX(-0deg);
+        }
+    
+        .raya_contact {
+            height: 1.5rem;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            margin: 3rem 0rem;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 14rem 35rem;
+            grid-template-rows: repeat(5, 5rem);
+            margin: auto;
+            a {
+                display: inline-block;
+                font-size: 1.6rem;
+                transform: skewX(-0deg);
+                color: #ffffff;
+                text-decoration: none;
+                
+            }
+            a:hover {
+                color: #ff8484;
+                text-decoration: underline;
+            }
+            span {
+                display: inline-block;
+                font-size: 1.6rem;
+                transform: skewX(-0deg);
+                margin-left: 0rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contact {
+
+        section {
+            display: grid;
+            grid-template-columns: 8rem 35rem;
+            grid-template-rows: repeat(5, 5rem);
+            margin: auto;
+        }
+    }
 }

@@ -28,23 +28,28 @@
             grid-row: 2 / 3;
         }
         
-        .section .sass {
+        .section .react {
             grid-column: 3 / 4;
             grid-row: 2 / 3;
         }
         
-        .section .ubuntu {
+        .section .sass {
             grid-column: 1 / 2;
             grid-row: 3 / 4;
         }
         
-        .section .git {
+        .section .ubuntu {
             grid-column: 3 / 4;
             grid-row: 3 / 4;
         }
         
-        .section .github {
+        .section .git {
             grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+        
+        .section .github {
+            grid-column: 3 / 4;
             grid-row: 4 / 5;
         }
     }
@@ -153,23 +158,28 @@
             grid-row: 1 / 2;
         }
     
-        .section .sass {
+        .section .react {
             grid-column: 7 / 8;
             grid-row: 1 / 2;
         }
-    
-        .section .ubuntu {
+
+        .section .sass {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
         }
     
-        .section .git {
+        .section .ubuntu {
             grid-column: 3 / 4;
             grid-row: 2 / 3;
         }
     
-        .section .github {
+        .section .git {
             grid-column: 5 / 6;
+            grid-row: 2 / 3;
+        }
+    
+        .section .github {
+            grid-column: 7 / 8;
             grid-row: 2 / 3;
         }
     

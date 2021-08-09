@@ -6,6 +6,7 @@ import sass from '../img/sass.svg';
 import ubuntu from '../img/ubuntu.svg';
 import github from '../img/git.svg';
 import git from '../img/github.svg';
+import react from '../img/react.svg';
 
 
 import './sass/about.scss'
@@ -36,6 +37,9 @@ class about extends React.Component {
 
           <img className="js" src={js} alt=""></img>
           <span>JAVASCRPT</span>
+
+          <img className="react" src={react} alt="react"></img>
+          <span>REACT</span>
 
           <img className="sass" src={sass} alt=""></img>
           <span>SASS</span>

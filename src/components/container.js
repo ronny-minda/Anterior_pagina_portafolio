@@ -45,29 +45,29 @@ class Container extends React.Component {
     this.setState({
       main: 'main_about',
     });
-    console.log(this.state.main)
+
   }
   proyects = () => {
     this.setState({
       main: 'main_proyects',
     });
-    console.log(this.state.main)
+
   }
   contact = () => {
     this.setState({
       main: 'main_contact',
     });
-    console.log(this.state.main)
+
   }
   certificate = () => {
 
-    console.log(this.state.main)
+
     
     let certificate = 'main_certificate'
     this.setState({
       main: certificate,
     });
-    console.log(this.state.main)
+
   }
 
   render() {

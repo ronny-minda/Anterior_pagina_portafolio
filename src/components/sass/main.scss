@@ -5,6 +5,27 @@
         overflow: scroll;
         height: 100vh;
     }
+    main::-webkit-scrollbar {
+        width: 7px;
+    }
+      
+      /* Track */
+    main::-webkit-scrollbar-track {
+        background-color: #88777743;
+        border-radius: 10px;
+    }
+
+      /* Handle */
+    main::-webkit-scrollbar-thumb {
+        background: #0000009f;
+        border-radius: 10px;
+    }
+      
+      /* Handle on hover */
+    main::-webkit-scrollbar-thumb:hover {
+        background: #000000b4;
+    }
+
 }
 
 @media (min-width: 600px) {
