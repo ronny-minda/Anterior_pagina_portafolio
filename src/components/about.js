@@ -54,6 +54,7 @@ class about extends React.Component {
           <span>GITHUB</span>
           
           
+          
 
         </section>
         <div className="main_raya"></div>
