@@ -55,7 +55,6 @@ class about extends React.Component {
           
           
           
-
         </section>
         <div className="main_raya"></div>
 
