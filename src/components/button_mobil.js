@@ -30,11 +30,13 @@ class button extends React.Component {
   render() {
     
     return (
-        <div className={this.props.clas1} onClick={this.props.onClick} >
+      <React.Fragment>
+      <div className={this.props.clas1} onClick={this.props.onClick} >
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
+      </React.Fragment>
     )
   }
 }

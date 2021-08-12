@@ -18,7 +18,8 @@ class Background extends React.Component {
       intro: 'loader_screen',
       opacity: 'opacidad',
       none: 'none',
-      switch: 'switch',   
+      switch: 'switch',
+      backgroundColor: 'background-color dark',
     }
 
     setTimeout(function () {
@@ -42,16 +43,20 @@ class Background extends React.Component {
   CambioBtn = () => {
 
     let a = this.state.switch;
+    let b = this.state.backgroundColor;
 
     if (this.state.switch === 'switch') {
       a = 'switch active'
+      b = 'background-color light'
     }else {
       a = 'switch'
+      b = 'background-color dark'
     }
 
     console.log('oscuro!!')
     this.setState({
       switch: a,
+      backgroundColor: b
     });
   }
 
@@ -65,7 +70,7 @@ class Background extends React.Component {
               <div className="cir_rojo"></div>
             </div> */}
 
-            <div className="boton">
+            <div className="boton" onClick={this.props.onClick}>
               <button className={this.state.switch} onClick={this.CambioBtn} id="switch">
                 <span><img src={logosol} alt=""></img></span>
                 <span><img src={lunaclara} alt=""></img></span>
@@ -76,7 +81,9 @@ class Background extends React.Component {
               <img src={logo} alt=""></img>
             </a>
             
-            
+            <div className={this.state.backgroundColor}>
+              
+            </div>
             
             <div className="background_img">
               <img className="img1" src={imgSvg2} alt=""></img>

@@ -11,7 +11,7 @@ $line_color: #55bff6;
 }
 
 ::selection {
-    background: #7e5f5f;
+    background: #898bfd;
     color: #fde7e7;
 }
 
@@ -22,8 +22,30 @@ html {
 body {
     /* background-color: $background_color; */
     height: 100vh;
-    background-image: linear-gradient(to right, #484b55, #3d3f48, #32343b, #28292f, #1e1f23);
     
+    
+    .background-color {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: red;
+    }
+
+    .light {
+        background: linear-gradient(to right, #484b555b, #3d3f485b, #32343ba9, #28292f6e, #1e1f236e);
+        background-image: linear-gradient(to right, #e9e9e99a, #d7d6db9a, #c6c4cea9, #b4b2c09a, #a3a0b39a);
+        background-position-x: 0rem;
+        background-color: #ffffff;
+        transition: .5s;
+        height: 100%;
+    }
+    .dark {
+        background: linear-gradient(to right, #484b55c4, #3d3f4880, #32343b80, #28292f80, #1e1f2380);
+        background-color: #1f1f1f;
+        transition: .5s;
+    }
+    
+
     .boton {
         position: fixed;
         top: 20px;
@@ -37,6 +59,7 @@ body {
             cursor: pointer;
             display: flex;
             outline: none;
+            
             &::after {
                 content: "";
                 display: block;
@@ -74,6 +97,8 @@ body {
             }
         }
     }
+
+
 
     
 
@@ -179,6 +204,8 @@ body {
         }
     }
 }
+
+
 
 
 /* * {

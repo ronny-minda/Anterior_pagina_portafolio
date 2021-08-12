@@ -72,7 +72,7 @@ class Container extends React.Component {
 
   render() {
     return (
-      <section className='container'>
+      <section id="halo" className={this.props.dark}>
         <div className='container_div'>
             <Btn clas1={this.state.clas1} onClick={this.Prueba}/>
             <Header 
