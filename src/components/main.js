@@ -10,10 +10,12 @@ import './sass/main.scss'
 
 
 class main extends React.Component {
+
+
   render() {
     return (
       <main className={this.props.main}>
-        <About />
+        <About logos={this.props.logos}/>
         <Proyects />
         <Contact />
         <Certificate />

@@ -1,18 +1,33 @@
 import React from 'react';
-import html from '../img/html.svg';
-import css from '../img/css.svg';
-import js from '../img/js.svg';
-import sass from '../img/sass.svg';
-import ubuntu from '../img/ubuntu.svg';
-import github from '../img/git.svg';
-import git from '../img/github.svg';
-import react from '../img/react.svg';
+
+// import css from '../img/css.svg';
+// import js from '../img/js.svg';
+// import sass from '../img/sass.svg';
+// import ubuntu from '../img/ubuntu.svg';
+// import github from '../img/git.svg';
+// import git from '../img/github.svg';
+// import react from '../img/react.svg';
 
 
 import './sass/about.scss'
 
 
 class about extends React.Component {
+
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+        loader: 'logo-inicio',            
+    }
+
+    if(this.props.dark === 'container lighta') {
+      console.log('blanco')
+    }else {
+      console.log('negro')
+    }
+  }
+
   render() {
     return (
       <section className="about">
@@ -29,28 +44,28 @@ class about extends React.Component {
         <div className="main_raya"></div>
         <section className="section">
 
-          <img className="html" src={html} alt="html"></img>
+          <img className="html" src={this.props.logos.html} alt="html"></img>
           <span>HTML</span>
 
-          <img className="css" src={css} alt="css"></img>
+          <img className="css" src={this.props.logos.css} alt="css"></img>
           <span>CSS</span>
 
-          <img className="js" src={js} alt=""></img>
+          <img className="js" src={this.props.logos.js} alt=""></img>
           <span>JAVASCRPT</span>
 
-          <img className="react" src={react} alt="react"></img>
+          <img className="react" src={this.props.logos.react} alt="react"></img>
           <span>REACT</span>
 
-          <img className="sass" src={sass} alt=""></img>
+          <img className="sass" src={this.props.logos.sass} alt=""></img>
           <span>SASS</span>
 
-          <img className="ubuntu" src={ubuntu} alt=""></img>
+          <img className="ubuntu" src={this.props.logos.ubuntu} alt=""></img>
           <span>UBUNTU</span>
 
-          <img className="git" src={git} alt="git"></img>
+          <img className="git" src={this.props.logos.git} alt="git"></img>
           <span>GIT</span>
 
-          <img className="github" src={github} alt="github"></img>
+          <img className="github" src={this.props.logos.github} alt="github"></img>
           <span>GITHUB</span>
           
           

@@ -1,4 +1,67 @@
 
+
+.container.darka .contact {
+    transition: .5s color;
+    color: #ffffff;
+    .raya_contact {
+        transition: .5s background-color;
+        background-color: #ffffff;
+    }
+    section {
+        a {
+            transition: .5s;
+            color: #ffffff;
+        }
+        a:hover {
+            color: #ff8484;
+        }
+        a::after {
+            content: '';
+            display: inline-block;
+            
+
+            height: 20px;
+            width: 23px;
+            background: url("../../img/redirects.png");
+            background-size: 21px 21px;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 0, 0, 0);
+            margin-left: 5px;
+        }
+    }
+}
+
+.container.lighta .contact {
+    transition: .5s color;
+    color: #000000;
+    .raya_contact {
+        transition: .5s background-color;
+        background-color: #000000;
+    }
+    section {
+        a {
+            transition: .5s;
+            color: #000000;
+        }
+        a:hover {
+            color: #ff8484;
+        }
+        a::after {
+            content: '';
+            display: inline-block;
+            
+
+            height: 20px;
+            width: 23px;
+            background: url("../../img/redirectsdark.png");
+            background-size: 21px 21px;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 0, 0, 0);
+            margin-left: 5px;
+        }
+    }
+}
+
 .contact {
     height: 100vh;
     width: 100%;
@@ -26,7 +89,7 @@
     .raya_contact {
         height: 1.5rem;
         width: 100%;
-        background-color: rgb(255, 255, 255);
+
         margin: 3rem 0rem;
     }
     section {
@@ -37,7 +100,7 @@
             display: inline-block;
             font-size: 1.6rem;
             transform: skewX(-25deg);
-            color: #ffffff;
+
             text-decoration: none;
             display: inline-block;
             transition: .3s font-size;
@@ -54,7 +117,7 @@
 
             height: 20px;
             width: 23px;
-            background: url("../../img/redirects.png");
+            background: url("../../img/redirectsdark.png");
             background-size: 21px 21px;
             background-repeat: no-repeat;
             background-color: rgba(255, 0, 0, 0);

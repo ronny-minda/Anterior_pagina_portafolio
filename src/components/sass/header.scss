@@ -77,8 +77,8 @@
 
 @media (min-width: 320px) {
     .header {
-        background: #cacbd16c;
-        backdrop-filter: blur(3px);
+        background: #cacbd1d3;
+        backdrop-filter: blur(1px);
         height: 100vh;
         width: 100vw;
         left: -100%;
@@ -173,16 +173,29 @@
 
     .container.lighta .header {
         border-radius: 10px 0 0 10px;
+        background: linear-gradient(0deg, #b2afc0  0%, #6d6a7e 10%, #6d6a7e  90%, #b2afc0 100%);
 
-        background: linear-gradient(0deg, #e9e9e9  0%, #bab6cc 10%, #bab6cc  90%, #e9e9e9 100%);
-
-        color: red;
+        nav {
+            li {
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
         // background-image: linear-gradient(0deg, #e9e9e9, #d7d6db, #c6c4ce, #b4b2c0, #a3a0b3);
     }
 
     .container.darka .header {
         border-radius: 10px 0 0 10px;
         background: linear-gradient(0deg, #a3a0b3  0%, #d7d6db 10%, #d7d6db  90%, #a3a0b3 100%);
+
+        nav {
+            li {
+                a {
+                    color: #000000;
+                }
+            }
+        }
     }
 }
 

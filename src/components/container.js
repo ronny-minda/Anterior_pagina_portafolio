@@ -82,7 +82,7 @@ class Container extends React.Component {
             proyects={this.proyects} 
             contact={this.contact} 
             certificate={this.certificate} />
-            <Main main={this.state.main}/>
+            <Main logos={this.props.logos} main={this.state.main}/>
         </div>
       </section>
     );
