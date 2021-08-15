@@ -119,7 +119,7 @@ class header extends React.Component {
                     <div className={ this.state.rayaCertificate}></div>
                     
                     <li className={ this.state.clasDownload }>
-                        <a className="curriculum" href="https://raw.githubusercontent.com/ronny-minda/ronny-minda.github.io/master/assets/Curriculum%20Ronny%20Minda.pdf" title="Descargar CV" > { this.state.Download } </a>
+                        <a className="curriculum" href="https://raw.githubusercontent.com/ronny-minda/ronny-minda.github.io/master/assets/CurriculumRonnyMinda.pdf" title="Descargar CV" > { this.state.Download } </a>
                     </li>
                     <div className={ this.state.rayaDownload }></div>
                 </nav>
