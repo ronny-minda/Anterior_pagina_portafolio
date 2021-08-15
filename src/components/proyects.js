@@ -28,6 +28,10 @@ class proyects extends React.Component {
       zoom4: 'zoom',
       zoom5: 'zoom',
     }
+
+    console.log("%c¡Hola! Déjame saber cómo puedo mejorar enviándome un correo electrónico a: %cronny.michael.minda.vera@gmail.com", "font-size: 18px;", "font-size: 18px; color: lightblue; text-decoration: underline;")
+
+
   }
 
   
