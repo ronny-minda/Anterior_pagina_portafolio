@@ -42,7 +42,7 @@ class App extends React.Component {
   }
 
   Prueba = () => {
-    console.log('t6ema oscuro');
+
     if (this.state.dark === 'container darka'){
       this.setState({
         dark: 'container lighta',

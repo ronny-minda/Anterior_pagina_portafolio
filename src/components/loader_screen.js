@@ -15,7 +15,7 @@ class loaderScreean extends React.Component {
 
         setTimeout(function () {
 
-            console.log('11')
+
 
             this.setState({
                 loader: 'logo-inicio linea_logo'

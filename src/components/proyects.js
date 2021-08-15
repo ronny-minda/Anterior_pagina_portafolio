@@ -302,8 +302,8 @@ class proyects extends React.Component {
                   <p>React.js</p>
                   <p>Sass</p>
                   <h2>AVAILABLE</h2>
-                  <a href="https://ronny-minda.github.io/" target="_blank">Web Page</a>
-                  <a href="https://github.com/ronny-minda/ronny-minda.github.io" target="_blank">GitHub</a>
+                  <a href="https://ronny-minda.github.io/" target="_blank" rel="noopener noreferrer">Web Page</a>
+                  <a href="https://github.com/ronny-minda/ronny-minda.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </section>
 
                 <div className={this.state.zoom1} onClick={this.CambioClose1}>
@@ -337,8 +337,8 @@ class proyects extends React.Component {
                   <p>Css</p>
                   <p>javascript</p>
                   <h2>AVAILABLE</h2>
-                  <a href="https://ronny-minda.github.io/Nutricionista/" target="_blank">Web Page</a>
-                  <a href="https://github.com/ronny-minda/Nutricionista" target="_blank">GitHub</a>
+                  <a href="https://ronny-minda.github.io/Nutricionista/" target="_blank" rel="noopener noreferrer">Web Page</a>
+                  <a href="https://github.com/ronny-minda/Nutricionista" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </section>
 
                 <div className={this.state.zoom2} onClick={this.CambioClose2}>
@@ -370,8 +370,8 @@ class proyects extends React.Component {
                   <p>Css</p>
                   <p>javascript(BOM)</p>
                   <h2>AVAILABLE</h2>
-                  <a href="https://ronny-minda.github.io/Primer_Portafolio_personal/" target="_blank">Web Page</a>
-                  <a href="https://github.com/ronny-minda/Primer_Portafolio_personal" target="_blank">GitHub</a>
+                  <a href="https://ronny-minda.github.io/Primer_Portafolio_personal/" target="_blank" rel="noopener noreferrer">Web Page</a>
+                  <a href="https://github.com/ronny-minda/Primer_Portafolio_personal" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </section>
 
                 <div className={this.state.zoom3} onClick={this.CambioClose3}>
@@ -403,8 +403,8 @@ class proyects extends React.Component {
                   <p>Html</p>
                   <p>Css</p>
                   <h2>AVAILABLE</h2>  
-                  <a href="https://ronny-minda.github.io/Dibujo-de-kirby/" target="_blank">Web Page</a>
-                  <a href="https://github.com/ronny-minda/Dibujo-de-kirby" target="_blank">GitHub</a>
+                  <a href="https://ronny-minda.github.io/Dibujo-de-kirby/" target="_blank" rel="noopener noreferrer">Web Page</a>
+                  <a href="https://github.com/ronny-minda/Dibujo-de-kirby" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </section>
 
                 <div className={this.state.zoom4} onClick={this.CambioClose4}>
@@ -433,8 +433,8 @@ class proyects extends React.Component {
                   <p>React.js</p>
                   <p>Sass</p>
                   <h2>AVAILABLE</h2>
-                  <a href="https://github.com/ronny-minda/Dibujo-de-kirby" target="_blank">Web Page</a>
-                  <a href="https://ronny-minda.github.io/Dibujo-de-kirby/" target="_blank">GitHub</a>
+                  <a href="https://github.com/ronny-minda/Dibujo-de-kirby" target="_blank" rel="noopener noreferrer">Web Page</a>
+                  <a href="https://ronny-minda.github.io/Dibujo-de-kirby/" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </section>
 
                 <div className={this.state.zoom5} onClick={this.CambioClose5}>

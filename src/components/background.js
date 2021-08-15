@@ -24,7 +24,7 @@ class Background extends React.Component {
 
     setTimeout(function () {
 
-        console.log('11')
+
 
         this.setState({
             intro: 'loader_screen opacidad',
@@ -32,7 +32,7 @@ class Background extends React.Component {
     }.bind(this), 5000)
 
     setTimeout(function () {
-      console.log('11')
+
 
       this.setState({
           intro: 'loader_screen opacidad none',
@@ -53,7 +53,7 @@ class Background extends React.Component {
       b = 'background-color dark'
     }
 
-    console.log('oscuro!!')
+
     this.setState({
       switch: a,
       backgroundColor: b

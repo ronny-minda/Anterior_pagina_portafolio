@@ -57,6 +57,7 @@ class header extends React.Component {
 
 
     About = () => {
+        document.querySelector('main').scrollTo(0,0)
         this.props.about();
         this.cambioFocus('li-About menuact1','raya-About menuact2', 
                          'li-Projects','raya-Projects', 
@@ -64,6 +65,7 @@ class header extends React.Component {
                          'li-Certificate','raya-Certificate');
     }
     Projects = () => {
+        document.querySelector('main').scrollTo(0,450)
         this.props.proyects();
         this.cambioFocus('li-About','raya-About', 
                          'li-Projects menuact1','raya-Projects menuact2', 
@@ -71,6 +73,7 @@ class header extends React.Component {
                          'li-Certificate','raya-Certificate');
     }
     Contact = () => {
+        document.querySelector('main').scrollTo(0,990)
         this.props.contact();
         this.cambioFocus('li-About','raya-About', 
                          'li-Projects','raya-Projects', 
@@ -78,6 +81,7 @@ class header extends React.Component {
                          'li-Certificate','raya-Certificate');
     }
     Certificate = () => {
+        document.querySelector('main').scrollTo(0,1450)
         this.props.certificate();
         this.cambioFocus('li-About','raya-About', 
                          'li-Projects','raya-Projects', 

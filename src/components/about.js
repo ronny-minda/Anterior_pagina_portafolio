@@ -22,9 +22,9 @@ class about extends React.Component {
     }
 
     if(this.props.dark === 'container lighta') {
-      console.log('blanco')
+
     }else {
-      console.log('negro')
+
     }
   }
 
