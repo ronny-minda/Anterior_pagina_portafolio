@@ -130,10 +130,10 @@ body {
     @media (min-width: 320px) {
         .logo {
             position: fixed;
-            height: 120px;
+            height: 100px;
             background-color: #ffffff00;
             display: flex;
-            top: -30px;
+            top: -10px;
             left : calc(50% - 60px);
             z-index: 999;
         }
@@ -146,13 +146,13 @@ body {
             transition: 3s;
             width: auto;
             display: flex;
-            top: -30px;
+            top: -10px;
             left: 0;
             margin: 1rem;
             height: auto;
             img {
                 margin: auto;
-                height: 150px;
+                height: 100px;
                 background-color: #ff000000;
             }
             

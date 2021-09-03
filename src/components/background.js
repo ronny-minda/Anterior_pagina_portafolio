@@ -5,7 +5,7 @@ import './sass/background.scss';
 
 import imgSvg2 from '../img/imgSvg2.svg';
 import imgSvg3 from '../img/imgSvg3.svg';
-import logo from '../img/logo.svg';
+import logo from '../img/logoNuevo.svg';
 import logosol from '../img/solclaro.svg';
 import lunaclara from '../img/lunaclaro.svg';
 
@@ -78,7 +78,7 @@ class Background extends React.Component {
             </div>
             
             <a className="logo" href="http://ronny-minda.github.io/">
-              <img src={logo} alt=""></img>
+              <img src={ logo } alt=""></img>
             </a>
             
             <div className={this.state.backgroundColor}>
