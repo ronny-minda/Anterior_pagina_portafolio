@@ -1,4 +1,5 @@
 import React from 'react';
+import Typed from 'react-typed';
 
 // import css from '../img/css.svg';
 // import js from '../img/js.svg';
@@ -32,7 +33,16 @@ class about extends React.Component {
     return (
       <section className="about">
         <h1>Ronny Minda Vera</h1>
-        <h3>Desarrollador Front End </h3>
+        <h3>Desarrollado
+          <Typed
+              strings={[
+                  'r Front End',
+                  'r WEB']}
+                  typeSpeed={100}
+                  backSpeed={50}
+                  loop >
+          </Typed>
+        </h3>
 
         <p>¡Hola! Soy Ronny Michael, comencé mi carrera en el ITB como desarrollo Software</p>
         <p>y actualmente me estoy reinventando como desarrollador front end de manera </p>

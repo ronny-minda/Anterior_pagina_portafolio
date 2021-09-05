@@ -1,5 +1,10 @@
-import React from 'react';
+import { sign } from 'crypto';
+// import React from 'react';
+import Typed from 'react-typed';
+
 import { Link } from 'react-router-dom';
+
+import React, {useState} from 'react';
 
 
 import './sass/header.scss';
@@ -8,6 +13,7 @@ import './sass/header.scss';
 
 
 class header extends React.Component {
+
 
     constructor(props) {
         super(props);
@@ -20,6 +26,8 @@ class header extends React.Component {
             Certificate: 'CERTIFICATE',
             Download: 'CV DOWNLOAD',
 
+            num: 2,
+            cambio: 'si',
 
             clasAbout: 'li-About menuact1',
             rayaAbout: 'raya-About menuact2',
@@ -54,7 +62,6 @@ class header extends React.Component {
             rayaCertificate: d2,
         });
     }
-
 
     About = () => {
         document.querySelector('main').scrollTo(0,0)
@@ -119,9 +126,24 @@ class header extends React.Component {
                     <div className={ this.state.rayaCertificate}></div>
                     
                     <li className={ this.state.clasDownload }>
-                        <a className="curriculum" href="https://raw.githubusercontent.com/ronny-minda/ronny-minda.github.io/master/assets/CurriculumRonnyMinda.pdf" title="Descargar CV" > { this.state.Download } </a>
+                        <a className="curriculum" href="https://raw.githubusercontent.com/ronny-minda/ronny-minda.github.io/master/assets/CurriculumRonnyMinda.pdf" title="Descargar CV" >CV D
+                            <Typed
+                                strings={[
+                                    'OWNLOAD',
+                                    'OWNLOAD']}
+                                    typeSpeed={80}
+                                    backSpeed={100}
+                                    loop >
+                            </Typed>
+                        </a>
                     </li>
+
                     <div className={ this.state.rayaDownload }></div>
+
+
+                
+            
+                
                 </nav>
             </header>
     )
