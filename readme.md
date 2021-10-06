@@ -1,7 +1,7 @@
 
 # Portafolio
 
-Dispoible en: https://ronny-minda.github.io/Anterior_portafolio/
+Dispoible en: https://ronny-minda-anterior-web.herokuapp.com/
 
 <h2>Responsive design</h2>
 <h3>Desktop</h3>
