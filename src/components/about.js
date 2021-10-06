@@ -7,7 +7,7 @@ import Typed from 'react-typed';
 // import ubuntu from '../img/ubuntu.svg';
 // import github from '../img/git.svg';
 // import git from '../img/github.svg';
-// import react from '../img/react.svg';
+
 
 
 import './sass/about.scss'
@@ -21,6 +21,7 @@ class about extends React.Component {
     this.state = {
         loader: 'logo-inicio',            
     }
+
 
     if(this.props.dark === 'container lighta') {
 
